@@ -1,0 +1,61 @@
+.clock{
+  background-color: rgb(53, 132, 189);
+  display: flex;
+  height: 85.5vh;
+  justify-content: center;
+  align-items: top;
+}
+
+
+
+.clock-body{
+  margin: 2em 0px;
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 2em;
+  display: flex;
+  flex-direction:column;
+}
+
+
+
+.clock-timer{
+  margin-top: 3em;
+  margin-bottom: 1em;
+  background-color: aquamarine;
+  flex: 5;
+}
+
+.clock-controller{
+  padding: 1em;
+  width: 30em;
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.clock-controller>button{
+  height: 5em;
+  width: 5em;
+}
+
+
+.clock button{
+  border-radius: 1em;
+  border-width: 1px;
+}
+
+
+
+
+.timer-body{
+
+  background-color: aqua;
+  margin: auto;
+  height: 75%;
+  width: 75%;
+}
+
+.clock-cp{
+  text-align: center;
+}

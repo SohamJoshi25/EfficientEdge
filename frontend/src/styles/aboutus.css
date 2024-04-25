@@ -1,0 +1,72 @@
+.about-us{
+    background-color:rgba(3, 20, 54, 0.884);
+}
+
+.about-us hr{
+    margin: 0px 4em;
+}
+
+.project-info{
+    color:rgb(206, 227, 240);
+    padding: 2em;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.about-us strong{
+    color:rgb(206, 227, 240);
+    font-weight: 1em;
+}
+
+.about-us h1,h2{
+    color:rgb(206, 227, 240);
+    text-align: center;
+}
+
+.about-us-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 4em;
+    padding-top: 4em;
+}
+
+.about-card{
+    background-color:rgb(206, 227, 240);
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    margin: 3em 2em;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: space-between;
+}
+
+.about-flip{
+    flex-direction: row-reverse;
+}
+
+.about-img{
+    padding: 10px;
+}
+
+.about-img>img{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    scale: 1.8;
+}
+
+.about-info{
+    color: rgb(15, 17, 90);
+    margin: 2em 4em;
+    text-align:baseline;
+    height: 100%;
+    width: 75%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 80px;
+}

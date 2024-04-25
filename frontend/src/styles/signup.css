@@ -1,0 +1,57 @@
+.signup-body{
+
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: bisque;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159, 216, 240, 0.81);
+    padding: 2rem;
+    width: 18vw;
+    border-radius: 1.3em;
+}
+
+.signup-form h2{
+    color: #242323;
+    margin: 1em;
+}
+
+.signup-form label{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+}
+
+.signup-form input{
+    margin-bottom: 1rem;
+    height: 2em;
+    height: 4vh;
+    width: 80%;
+    border-radius: 0.5em;
+    text-align: center;
+    border-style: none;
+}
+
+.signup-form input:active {
+    border-style: none;
+}
+
+.submit{
+    margin-top: 1em;
+    height: 5vh;
+    width: 60%;
+    font-size: 1.1em;
+    color: aliceblue;
+    background-color: rgb(5, 120, 155);
+    border-radius: 0.5em;
+}

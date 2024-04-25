@@ -1,0 +1,56 @@
+:root{
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+body{
+  
+  color: #eee;
+}
+
+.clock{
+  color: #eee;
+  height:88.7vh;
+  background-color: #395188;
+
+}
+
+.clock main{
+
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clock button{
+  background-color: transparent;
+  color: rgba(255,255,255,0.8);
+  border:0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+.clock button.with-text{
+  color: #eee;
+  width: auto;
+  background-color:rgba(255,255,255,0.1);
+  border-radius:10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+.clock button.with-text svg{
+  width: 36px;
+  float:left;
+  margin-right: 5px;
+}
+
+.clock label{
+  color: #eee;
+  display:block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #242323;
+}
+.navbar {
+  font-size: large;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px so                                                                                                     lid #f2f2f2;
+}
+.navbar h1 {
+  color: #58bbf0;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #358df1;
+}
+.content {
+  margin: 40px auto;
+  padding: 20px;
+}
+.pairPreview{
+  padding: 10px 10px;
+  margin: 8px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.pairPreview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.591);
+}
+.home h2 {
+  font-size: 20px;
+  color:#000000;
+  margin-bottom: 8px;
+}
+.pairPreview h2{
+  font-size: 20px;
+  color:#000000;
+  margin-bottom: 8px;
+}
+.pairPreview h3{
+  font-size: 20px;
+  color:#000000;
+  margin-bottom: 8px;
+}
+
+.navbar div{
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar div button{
+  font-weight: 500;
+}
+
+.logoutBtn{
+  width: 100px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 6px;
+  background-color: rgb(209, 241, 248);
+
+}
+
+.logoutBtn:hover{
+  background-color: rgb(232, 241, 177);
+}

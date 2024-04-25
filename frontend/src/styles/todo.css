@@ -1,0 +1,117 @@
+.Todo{
+    background-color: rgb(130, 202, 224);
+    width: 100%;
+    height: 89.6vh;
+}
+
+.control{
+    background-color: rgb(25, 165, 207);
+}
+
+.todoLists{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todoList{
+    padding: 40px;
+    background-color: rgba(255, 228, 196, 0.484);
+    border-radius: 1.2em;
+    margin-bottom: 70px;
+    margin: 30px;
+    padding-top: 20px;
+    box-shadow: 10px 10px 2px;
+    
+}
+
+.todoList h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.listControl{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.listControl button{
+    color: #000;
+    height: 2em;
+    background-color: rgba(47, 47, 48, 0.232);
+    border-style: solid;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.control{
+    display: flex;
+    justify-content: center;
+    min-height: 2em;
+    padding: 8px;
+}
+
+.control button{
+    background-color: rgb(187, 230, 226);
+    font-weight: 900;
+    border-radius: 0.5em;
+    height: 3rem;
+}
+
+.listControl button:hover{
+    background-color: rgba(47, 47, 48, 0.501);
+    
+}
+
+
+.checked{
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    color: rgba(35, 37, 39, 0.742);
+    font-weight: 300;
+}
+
+.taskHolder{
+    background-color:rgba(35, 29, 29, 0.196);
+    color: rgb(4, 5, 6);
+    font-weight: 500;
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 2px 2px;
+    
+}
+
+.taskHolder:hover{
+    background-color:rgba(13, 13, 13, 0.327);
+}
+
+.taskHolder>img{
+    width: 1.5em;
+    margin-left: 1em;
+    
+}
+
+
+.circle{
+    list-style: disc inside;
+    padding: 0px;
+}
+
+.decimal{
+    list-style: decimal inside; 
+    padding: 0px;
+}
+
+.taskHolder>img:hover{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
