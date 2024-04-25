@@ -11,7 +11,7 @@ const Todo = () => {
     const fetchData = async () => {
         try {
             const ID = localStorage.getItem("token");
-            const response = await fetch('http://localhost:8000/todo/user/', {
+            const response = await fetch('https://efficientedge.onrender.com/todo/user/', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',

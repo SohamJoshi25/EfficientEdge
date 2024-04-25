@@ -12,7 +12,7 @@ const Task = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const proxy = "http://localhost:8000/task/"+ID;
+            const proxy = "https://efficientedge.onrender.com/task/"+ID;
             try {
                 const response = await fetch(proxy, {
                     headers: {
@@ -38,7 +38,7 @@ const Task = (props) => {
 
     const deleteTask = async (e)=>{
         e.stopPropagation();
-        const proxy = "http://localhost:8000/task/"+ID;
+        const proxy = "https://efficientedge.onrender.com/task/"+ID;
         try {
             const response = await fetch(proxy, {
                 headers: {
@@ -73,7 +73,7 @@ const Task = (props) => {
             check.checked=true;
         }
 
-        const proxy = "http://localhost:8000/task/"+ID;
+        const proxy = "https://efficientedge.onrender.com/task/"+ID;
         try {
             const response = await fetch(proxy, {
                 headers: {

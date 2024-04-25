@@ -15,7 +15,7 @@ const NavBar = () => {
     const verifyJWT = async ()=>{
         try{
           console.log("faf");
-          const response = await fetch("http://localhost:8000/auth/jwt",{
+          const response = await fetch("https://efficientedge.onrender.com/auth/jwt",{
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json',

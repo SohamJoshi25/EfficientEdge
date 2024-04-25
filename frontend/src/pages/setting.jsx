@@ -25,7 +25,7 @@ const Setting = () => {
       }
         try {
             const ID = localStorage.getItem("token");
-            const response = await fetch('http://localhost:8000/auth/changepassword', {
+            const response = await fetch('https://efficientedge.onrender.com/auth/changepassword', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
