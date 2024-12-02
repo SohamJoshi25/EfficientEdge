@@ -15,7 +15,7 @@ const NavBar = () => {
     const verifyJWT = async ()=>{
         try{
           console.log("faf");
-          const response = await fetch("https://efficientedge.onrender.com/auth/jwt",{
+          const response = await fetch(process.env.REACT_APP_BASE_URL+"/auth/jwt",{
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json',
@@ -42,30 +42,34 @@ const NavBar = () => {
       if(localStorage.getItem("token"))
       verifyJWT();
 
-      const setting = ()=>{
-        navigate('/setting');
-        navigate(0);
-      }
 
     return (
         <nav className="navbar">
             <h1> EfficientEdge </h1>
-            {valid && <a href="/home" >Home</a> }
-            {valid && <a href="/clock" >Clock</a> }
-            {valid && <a href="/to-do" > To-Do List</a> }
-           {valid &&  <a href="/planner" >Planner</a> }
-           {valid &&  <a href="/files" > Files</a> }
-           {valid &&  <a href="/about-us" > About Us</a> }
-            {!valid && <a href="/signup">Sign Up</a>}
-            {!valid && <a href="/login">Login</a> }
-            {valid  && <div>
-                <button className="logoutBtn" onClick={logout}> Logout </button>
-            </div> }
+            {valid && <Link to="/home" >Home</Link> }
+            {valid && <Link to="/clock" >Clock</Link> }
+            {valid && <Link to="/to-do" > To-Do List</Link> }
+           {valid &&  <Link to="/planner" >Planner</Link> }
+           {valid &&  <Link to="/files" > Files</Link> }
+           {valid &&  <Link to="/about-us" > About Us</Link> }
+           
+            {!valid && <Link to="/signup">Sign Up</Link>}
+            {!valid && <Link to="/login">Login</Link> }
 
-            {valid && 
-               <button className="homeSettingBtn" onClick={setting}>
-                   <img src={settingLogo} alt="Setting" /> <p>Account Settings</p>
-               </button>
+            {valid  && 
+            <Link to="/login" >
+              <div onClick={()=>{
+              localStorage.removeItem("token");
+            }}>
+                <button className="logoutBtn"> Logout </button>
+            </div> 
+            </Link>}
+
+            {valid && <Link to="/setting">
+                <button className="homeSettingBtn" >
+                    <img src={settingLogo} alt="Setting" /> <p>Account Settings</p>
+                </button>
+               </Link>
             }
         </nav>
     );

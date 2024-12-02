@@ -1,0 +1,13 @@
+
+<svg className="delete-btn" width="30" height="30" viewBox="0 0 150 150" stroke="black" xmlns="http://www.w3.org/2000/svg">
+    <line x1="31" y1="130" x2="120" y2="130" stroke-width="8"/>
+    <line x1="18" y1="40" x2="132" y2="40"  stroke-width="6"/>
+    <line x1="33" y1="45" x2="33" y2="134"  stroke-width="8"/>
+    <line x1="51" y1="48" x2="51" y2="123" stroke-width="4"/>
+    <line x1="75" y1="48" x2="75" y2="123" stroke-width="4"/>
+    <line x1="98" y1="48" x2="98" y2="123"  stroke-width="4"/>
+    <line x1="38" y1="15" x2="113" y2="15"  stroke-width="4"/>
+    <line x1="116" y1="45" x2="116" y2="134"  stroke-width="8"/>
+    <path d="M38.9935 14.0378L28 38"  stroke-width="4"/>
+    <path d="M111.926 14L122 38"  stroke-width="4"/>
+</svg>

@@ -25,7 +25,7 @@ const Signup
             
         }
         try{
-            const response = await fetch('https://efficientedge.onrender.com/auth/signup', {
+            const response = await fetch(process.env.REACT_APP_BASE_URL+'/auth/signup', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
@@ -40,8 +40,9 @@ const Signup
             window.alert('User Registered Successfully');
             setEmail('');
             setPassword('');
+            props.setValid(true);
             navigate('/login');
-            navigate(0);
+            
         }catch(e){
             console.log(e);
         }

@@ -5,7 +5,7 @@ import "../styles/signup.css";
  
 
 
-const Login = () => {
+const Login = (props) => {
     const navigate = useNavigate()
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
@@ -18,7 +18,8 @@ const Login = () => {
         }
         console.log(email,password)
         try{
-            const response = await fetch('https://efficientedge.onrender.com/auth/login', {
+            console.log(process.env.BASE_URL+'/auth/login') 
+            const response = await fetch(process.env.REACT_APP_BASE_URL+'/auth/login', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
@@ -36,6 +37,7 @@ const Login = () => {
             window.alert('Login successful');
             setEmail('');
             setPassword('');
+            props.setValid(true);
             navigate('/home');
         }
         catch(e){

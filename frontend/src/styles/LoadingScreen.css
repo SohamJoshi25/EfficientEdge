@@ -1,0 +1,71 @@
+.loading-div {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #669FC1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .loading-screen {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .spinner {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-div > h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .loading-div>p {
+    font-size: 1.2em;
+    opacity: 0.8;
+  }
+  
+  .success {
+    color: #00ff84;
+    font-size: 2em;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textBounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  

@@ -10,7 +10,7 @@ const List = (props) => {
 
     const addTask = async () => {
         const title = window.prompt("Enter Title");
-        const proxy = "https://efficientedge.onrender.com/task/";
+        const proxy = process.env.REACT_APP_BASE_URL+"/task/";
         try {
             const response = await fetch(proxy, {
                 headers: {
@@ -37,7 +37,7 @@ const List = (props) => {
 
 
     const deleteTodo = async ()=>{
-        const proxy = "https://efficientedge.onrender.com/todo/"+List._id;
+        const proxy =process.env.REACT_APP_BASE_URL+"/todo/"+List._id;
         try {
             const TOKEN = localStorage.getItem('token');
             const response = await fetch(proxy, {

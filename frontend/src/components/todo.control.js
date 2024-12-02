@@ -12,7 +12,7 @@ const Control = () => {
         const color = "FFF";
         try {
             const ID = localStorage.getItem("token");
-            const response = await fetch('https://efficientedge.onrender.com/todo/', {
+            const response = await fetch(process.env.REACT_APP_BASE_URL+'/todo/', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',

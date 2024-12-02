@@ -12,7 +12,7 @@ const Task = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const proxy = "https://efficientedge.onrender.com/task/"+ID;
+            const proxy = process.env.REACT_APP_BASE_URL+"/task/"+ID;
             try {
                 const response = await fetch(proxy, {
                     headers: {
@@ -38,7 +38,7 @@ const Task = (props) => {
 
     const deleteTask = async (e)=>{
         e.stopPropagation();
-        const proxy = "https://efficientedge.onrender.com/task/"+ID;
+        const proxy = process.env.REACT_APP_BASE_URL+"/task/"+ID;
         try {
             const response = await fetch(proxy, {
                 headers: {
@@ -73,7 +73,7 @@ const Task = (props) => {
             check.checked=true;
         }
 
-        const proxy = "https://efficientedge.onrender.com/task/"+ID;
+        const proxy ="http://localhost/"+"/task/"+ID;
         try {
             const response = await fetch(proxy, {
                 headers: {
